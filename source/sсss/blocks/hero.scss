@@ -1,0 +1,76 @@
+.hero {
+  position: relative;
+
+  display: flex;
+  height: calc(100vh - 14vh);
+  padding: 25px 50px;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__background {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    z-index: -1;
+
+    width: 90%;
+
+    transform: translateX(-50%);
+    filter: brightness(115%);
+  }
+
+  &__title {
+    font-size: 3em;
+    font-family: $ff-sf-pro-display;
+  }
+
+  &__description {
+    margin-bottom: 10px;
+
+    font-size: 3em;
+    font-family: $ff-sf-pro-display;
+  }
+
+  &__description-highlighting {
+    color: $color-dark-orange;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+  }
+
+  &__location {
+    position: relative;
+
+    font-size: 1.1em;
+  }
+
+  &__location::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -32px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("@img/decorative/pin.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+  }
+
+  &__show-more {
+    margin-top: auto;
+  }
+}
