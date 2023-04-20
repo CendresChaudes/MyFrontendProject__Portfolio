@@ -15,27 +15,29 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
-  line-height: 150%;
-  letter-spacing: normal;
+  line-height: 1.5;
   font-family: $ff-sf-pro-text;
   color: $color-default-white;
+  letter-spacing: normal;
+
+  scrollbar-gutter: stable both-edges;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   background-color: $color-default-black;
 }
 
-main {
-  flex: 1 1 auto;
-}
-
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
 ul,
 li {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -49,6 +51,7 @@ a {
 
 img {
   max-width: 100%;
+
   object-fit: cover;
 }
 
