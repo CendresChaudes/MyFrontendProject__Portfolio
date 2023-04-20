@@ -30,7 +30,6 @@ const watcher = () => {
   gulp.watch(app.path.watch.bitmap, bitmap);
   gulp.watch(app.path.watch.svg, svg);
   gulp.watch(app.path.watch.sprite, sprite);
-  gulp.watch(app.path.watch.fonts, gulp.series(otfToTtf, ttfToWoff, copyFonts));
   gulp.watch(app.path.watch.other, copy);
 };
 
