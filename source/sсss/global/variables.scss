@@ -10,14 +10,24 @@ $color-transparent: rgba(255, 255, 255, 0);
 // Project-palette
 // Для нейминга используется https://www.htmlcsscolor.com/hex/63D1BB
 
-// !$color-whisper: #ececec;
+$color-dark-orange: #fe8f07;
+$color-free-speech-magenta: #e640ef;
 
 // Typography
 //----------------------------------------------------------------------------
 
-// !$ff-open-sans: "Open Sans", "Arial", sans-serif;
+// Sizes
+
+$fz-default: 16px;
+
+// Families
+
+$ff-sf-pro-text: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$ff-sf-pro-display: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
 
 // Viewports
 //----------------------------------------------------------------------------
 
-// !$vp-768: 768px;
+$vp-767: 767px;
+$vp-1199: 1199px;

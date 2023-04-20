@@ -1,17 +1,27 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Open Sans";
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "SF Pro Text";
 
-//   font-display: swap;
-//   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
-// }
+  font-display: swap;
+  src: url("../fonts/SF-Pro-Text-Regular.woff2") format("woff2"), url("../fonts/SF-Pro-Text-Regular.woff") format("woff");
+}
 
-// @font-face {
-//   font-style: normal;
-//   font-weight: 700;
-//   font-family: "Open Sans";
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "SF Pro Text";
 
-//   font-display: swap;
-//   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
-// }
+  font-display: swap;
+  src: url("../fonts/SF-Pro-Text-Semibold.woff2") format("woff2"), url("../fonts/SF-Pro-Text-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "SF Pro Display";
+
+  font-display: swap;
+  src: url("../fonts/SF-Pro-Display-Semibold.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Semibold.woff") format("woff");
+}
+
