@@ -14,6 +14,7 @@ export const scss = () => app.gulp.src(app.path.source.scss, { sourcemaps: app.i
   })))
   .pipe(preprocessorSass())
   .pipe(app.plugins.replace(/@img\//g, '../images/'))
+  .pipe(app.plugins.replace(/@fonts\//g, '../fonts/'))
   .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
   .pipe(app.plugins.if(app.isBuild, webpcss({
     webpClass: '.webp',
