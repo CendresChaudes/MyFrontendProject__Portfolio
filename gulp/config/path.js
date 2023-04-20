@@ -16,9 +16,9 @@ export const path = {
     pug: `${sourceFolder}/pug/pages/*.pug`,
     scss: `${sourceFolder}/sсss/style.scss`,
     js: `${sourceFolder}/js/**/*.js`,
-    bitmap: `${sourceFolder}/images/**/*.{jpg,jpeg,png,webp}`,
+    bitmap: `${sourceFolder}/images/{content,decorative}/**/*.{jpg,jpeg,png,webp}`,
     favicons: `${sourceFolder}/images/favicons/*`,
-    svg: `${sourceFolder}/images/**/*.svg`,
+    svg: `${sourceFolder}/images/{content,decorative}/**/*.svg`,
     sprite: `${sourceFolder}/images/sprite/*.svg`,
     fonts: `${sourceFolder}/fonts/**/*.{woff,woff2}`,
     other: `${sourceFolder}/*.{ico,webmanifest}`
@@ -27,9 +27,9 @@ export const path = {
     pug: `${sourceFolder}/pug/**/*.pug`,
     scss: `${sourceFolder}/sсss/**/*.scss`,
     js: `${sourceFolder}/js/**/*.js`,
-    bitmap: `${sourceFolder}/images/**/*.{jpg,jpeg,png,svg,webp}`,
+    bitmap: `${sourceFolder}/images/{content,decorative}/**/*.{jpg,jpeg,png,webp}`,
     favicons: `${sourceFolder}/images/favicons/*`,
-    svg: `${sourceFolder}/images/**/*.svg`,
+    svg: `${sourceFolder}/images/{content,decorative}/**/*.svg`,
     sprite: `${sourceFolder}/images/sprite/*.svg`,
     fonts: `${sourceFolder}/fonts/**/*.{woff,woff2}`,
     other: `'${sourceFolder}/*.{ico,webmanifest}`

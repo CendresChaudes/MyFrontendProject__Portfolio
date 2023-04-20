@@ -1,6 +1,6 @@
 import svgmin from 'gulp-svgmin';
 
-export const svg = () => app.gulp.src([app.path.source.svg, `!${app.path.source.favicons}`, `!${app.path.source.sprite}`])
+export const svg = () => app.gulp.src(app.path.source.svg)
   .pipe(app.plugins.plumber(
     app.plugins.notify.onError({
       title: 'SVG IMAGES',
