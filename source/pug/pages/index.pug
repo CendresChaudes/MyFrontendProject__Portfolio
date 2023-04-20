@@ -1,7 +1,12 @@
 extends ../components/base/layout
+
 block variables
   - var lang = ''
   - var title = ''
   - var pageClass = 'index'
 
 block content
+  main
+    container
+      include ../components/blocks/hero
+
