@@ -1,0 +1,41 @@
+.header {
+  padding: 15px 50px;
+
+  font-size: 1.2em;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 25px;
+  }
+
+  &__nav-link {
+    font-weight: 600;
+    letter-spacing: 0.01em;
+
+    background: linear-gradient(to right, $color-dark-orange, $color-free-speech-magenta 50%, $color-default-white 50%);
+    background-position: 100%;
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+            background-clip: text;
+
+    transition: background-position 450ms ease;
+
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__nav-link[href]:hover {
+    background-position: 0 100%;
+  }
+}
