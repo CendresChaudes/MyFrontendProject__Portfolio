@@ -20,11 +20,11 @@ export const scss = () => app.gulp.src(app.path.source.scss, { sourcemaps: app.i
     webpClass: '.webp',
     noWebpClass: '.no-webp'
   })))
-  .pipe(app.plugins.if(app.isBuild, autoPrefixer({
+  .pipe(autoPrefixer({
     grid: true,
     overrideBrowserslist: ['last 3 versions'],
     cascade: true
-  })))
+  }))
   .pipe(cleanCss())
   .pipe(app.plugins.rename({ extname: '.min.css' }))
   .pipe(app.gulp.dest(app.path.build.css, { sourcemaps: '.' }))
