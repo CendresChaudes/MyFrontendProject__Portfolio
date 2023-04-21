@@ -1,0 +1,18 @@
+.title {
+  padding: 5px 8px 0 8px;
+
+  font-size: 2rem;
+  font-family: $ff-sf-pro-display;
+  text-transform: uppercase;
+
+  background-image: linear-gradient(120deg, $color-dark-orange 0%, $color-free-speech-magenta 100%);
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 100% 0.2rem;
+
+  transition: background-size 250ms ease-in-out;
+
+  &:hover {
+    background-size: 100% 88%;
+  }
+}
