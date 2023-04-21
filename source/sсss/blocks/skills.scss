@@ -1,0 +1,90 @@
+.skills {
+  padding: 0 50px;
+
+  &__title {
+    margin: 0 0 30px 0;
+
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+
+    row-gap: 25px;
+    column-gap: 50px;
+  }
+
+  &__list-item {
+    padding: 15px 0 15px 60px;
+
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 50px 50px;
+
+    &--html5 {
+      background-image: url("@img/decorative/skills/html5-icon.svg");
+    }
+
+    &--pug {
+      background-image: url("@img/decorative/skills/pug-icon.svg");
+    }
+
+    &--css3 {
+      background-image: url("@img/decorative/skills/css3-icon.svg");
+    }
+
+    &--sass {
+      background-image: url("@img/decorative/skills/sass-icon.svg");
+    }
+
+    &--bem {
+      background-image: url("@img/decorative/skills/bem-icon.svg");
+    }
+
+    &--js {
+      background-image: url("@img/decorative/skills/js-icon.svg");
+    }
+
+    &--ts {
+      background-image: url("@img/decorative/skills/ts-icon.svg");
+    }
+
+    &--react {
+      background-image: url("@img/decorative/skills/react-icon.svg");
+    }
+
+    &--redux {
+      background-image: url("@img/decorative/skills/redux-icon.svg");
+    }
+
+    &--jest {
+      background-image: url("@img/decorative/skills/jest-icon.svg");
+    }
+
+    &--gulp {
+      background-image: url("@img/decorative/skills/gulp-icon.svg");
+    }
+
+    &--webpack {
+      background-image: url("@img/decorative/skills/webpack-icon.svg");
+    }
+
+    &--vsc {
+      background-image: url("@img/decorative/skills/vsc-icon.svg");
+    }
+
+    &--figma {
+      background-image: url("@img/decorative/skills/figma-icon.svg");
+    }
+    &--git {
+      background-image: url("@img/decorative/skills/git-icon.svg");
+    }
+
+  }
+
+  &__list-item.in-process {
+    opacity: 0.4;
+  }
+}
