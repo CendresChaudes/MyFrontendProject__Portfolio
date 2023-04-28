@@ -4,7 +4,7 @@
   font-family: "Lobster";
 
   font-display: swap;
-  src: url("@fonts/Lobster-Regular.woff2") format("woff2"), url("@fonts/Lobster-Regular.woff") format("woff");
+  src: url("@fonts/lobster-regular.woff2") format("woff2"), url("@fonts/lobster-regular.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-family: "SF Pro Text";
 
   font-display: swap;
-  src: url("@fonts/SF-Pro-Text-Regular.woff2") format("woff2"), url("@fonts/SF-Pro-Text-Regular.woff") format("woff");
+  src: url("@fonts/sf-pro-text-regular.woff2") format("woff2"), url("@fonts/sf-pro-text-regular.woff") format("woff");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-family: "SF Pro Text";
 
   font-display: swap;
-  src: url("@fonts//SF-Pro-Text-Semibold.woff2") format("woff2"), url("@fonts//SF-Pro-Text-Semibold.woff") format("woff");
+  src: url("@fonts/sf-pro-text-semibold.woff2") format("woff2"), url("@fonts/sf-pro-text-semibold.woff") format("woff");
 }
 
 @font-face {
@@ -31,6 +31,6 @@
   font-family: "SF Pro Display";
 
   font-display: swap;
-  src: url("@fonts//SF-Pro-Display-Semibold.woff2") format("woff2"), url("@fonts//SF-Pro-Display-Semibold.woff") format("woff");
+  src: url("@fonts/sf-pro-display-semibold.woff2") format("woff2"), url("@fonts/sf-pro-display-semibold.woff") format("woff");
 }
 
