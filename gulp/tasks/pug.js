@@ -6,7 +6,9 @@ export const pug = () => app.gulp.src(app.path.source.pug, { sourcemaps: app.isD
     title: 'PUG',
     message: 'Error: <%= error.message %>'
   })))
-  .pipe(preprocessorPug())
+  .pipe(preprocessorPug({
+    pretty: true
+  }))
   .pipe(app.plugins.replace(/@img\//g, 'images/'))
   .pipe(app.plugins.if(app.isBuild, htmlmin({ collapseWhitespace: true })))
   .pipe(app.gulp.dest(app.path.build.html))

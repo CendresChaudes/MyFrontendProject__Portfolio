@@ -25,7 +25,7 @@ export const scss = () => app.gulp.src(app.path.source.scss, { sourcemaps: app.i
     overrideBrowserslist: ['last 3 versions'],
     cascade: true
   }))
-  .pipe(cleanCss())
+  .pipe(app.plugins.if(app.isBuild, cleanCss()))
   .pipe(app.plugins.rename({ extname: '.min.css' }))
   .pipe(app.gulp.dest(app.path.build.css, { sourcemaps: '.' }))
   .pipe(app.plugins.browser.stream());
