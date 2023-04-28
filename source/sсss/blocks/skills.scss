@@ -9,15 +9,16 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     align-items: center;
 
-    row-gap: 25px;
     column-gap: 50px;
+
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 25px;
   }
 
   &__list-item {
-    padding: 15px 0 15px 60px;
+    padding: 15px 0 15px 75px;
 
     background-repeat: no-repeat;
     background-position: left center;
@@ -81,7 +82,6 @@
     &--git {
       background-image: url("@img/decorative/skills/git-icon.svg");
     }
-
   }
 
   &__list-item.in-process {
