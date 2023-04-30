@@ -21,7 +21,7 @@ export const path = {
     svg: `${sourceFolder}/images/{content,decorative}/**/*.svg`,
     sprite: `${sourceFolder}/images/sprite/*.svg`,
     fonts: `${sourceFolder}/fonts/**/*.{woff,woff2}`,
-    other: `${sourceFolder}/*.{ico,webmanifest}`
+    other: `${sourceFolder}/*.{ico,webmanifest,xml}`
   },
   watch: {
     pug: `${sourceFolder}/pug/**/*.pug`,
@@ -32,7 +32,7 @@ export const path = {
     svg: `${sourceFolder}/images/{content,decorative}/**/*.svg`,
     sprite: `${sourceFolder}/images/sprite/*.svg`,
     fonts: `${sourceFolder}/fonts/**/*.{woff,woff2}`,
-    other: `'${sourceFolder}/*.{ico,webmanifest}`
+    other: `'${sourceFolder}/*.{ico,webmanifest,xml}`
   },
   clean: buildFolder,
   buildFolder: buildFolder,
