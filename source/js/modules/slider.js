@@ -1,16 +1,15 @@
 import { Projects } from './data';
 import { debounce } from './utils';
 
+const FIRST_SLIDE_ID = 0;
+const NEXT_SLIDE_DELAY = 175;
+
 const sliderItems = document.querySelectorAll('.slider__item');
 const prevSlideButton = document.querySelector('.slider__button--prev');
 const nextSlideButton = document.querySelector('.slider__button--next');
-
 const slideTitle = document.querySelector('.slider__slide-title');
 const viewLink = document.querySelector('.slider__view-link');
 const githubLink = document.querySelector('.slider__github-link');
-
-const FIRST_SLIDE_ID = 0;
-const NEXT_SLIDE_DELAY = 175;
 
 let currentSlideId = 0;
 

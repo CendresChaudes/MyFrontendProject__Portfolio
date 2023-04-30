@@ -29,6 +29,6 @@ const Projects = [
     view: 'https://cendreschaudes.github.io/HTMLAcademy__JS1-Keksobooking/',
     github: 'https://github.com/CendresChaudes/HTMLAcademy__JS1-Keksobooking'
   }
-]
+];
 
 export { Projects };
