@@ -17,7 +17,7 @@ import { js } from './gulp/tasks/js.js';
 import { bitmap } from './gulp/tasks/bitmap.js';
 import { svg } from './gulp/tasks/svg.js';
 import { sprite } from './gulp/tasks/sprite.js';
-import { otfToTtf, ttfToWoff, copyFonts } from './gulp/tasks/fonts.js';
+import { copyFonts } from './gulp/tasks/fonts.js';
 import { server } from './gulp/tasks/server.js';
 import { clean } from './gulp/tasks/clean.js';
 import { copy } from './gulp/tasks/copy.js';
@@ -34,8 +34,7 @@ const watcher = () => {
 };
 
 const tools = gulp.parallel(server, watcher);
-const fonts = gulp.series(otfToTtf, ttfToWoff, copyFonts);
-const mainTasks = gulp.parallel(copy, pug, scss, js, bitmap, svg, sprite, fonts);
+const mainTasks = gulp.parallel(copy, pug, scss, js, bitmap, svg, sprite, copyFonts);
 
 export const dev = gulp.series(clean, mainTasks, tools);
 

@@ -15,3 +15,4 @@ Thumbs.db
 node_modules/
 dist/
 .temporary_cache/
+source/fonts/lobster-regular.ttf

@@ -42,10 +42,10 @@
     transition: background-position 450ms ease-in-out;
 
     -webkit-text-fill-color: transparent;
-  }
 
-  &__nav-link--active {
-    border-bottom: 3px solid $color-default-white;
+    &--current {
+      border-bottom: 3px solid $color-default-white;
+    }
   }
 
   &__nav-link[href]:hover {

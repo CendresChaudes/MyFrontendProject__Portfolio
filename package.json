@@ -1,7 +1,7 @@
 {
-  "name": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "name": "pp__portfolio",
   "private": true,
-  "description": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "description": "My portfolio page",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/polyfill": "^7.12.1",

@@ -1,4 +1,6 @@
 import { testWebP } from './modules/utils';
+import { initScroll } from './modules/scroll';
+import { initSLider } from './modules/slider';
 
 testWebP((support) => {
   if (support) {
@@ -7,3 +9,6 @@ testWebP((support) => {
   }
   document.body.classList.add('no-webp');
 });
+
+initScroll();
+initSLider();
