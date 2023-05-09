@@ -65,7 +65,6 @@ const onShowMoreButtonClick = (evt) => {
 
 const resetScrollPosition = () => {
   history.scrollRestoration = 'manual';
-  window.scrollTo(0, 0);
 };
 
 const addListeners = () => {
