@@ -7,23 +7,24 @@ const headerHeight = header.clientHeight;
 
 const ViewPosition = {
   INTRO: 0,
-  ABOUT: getViewPosition(document.querySelector('.about__title').getBoundingClientRect().top, headerHeight, 10),
+  ABOUT: getViewPosition(document.querySelector('.about__title').getBoundingClientRect().top, headerHeight),
   SKILLS: getViewPosition(document.querySelector('.skills__title').getBoundingClientRect().top, headerHeight),
   WORKS: getViewPosition(document.querySelector('.works__title').getBoundingClientRect().top, headerHeight),
   CONTACTS: getViewPosition(document.querySelector('.contacts__title').getBoundingClientRect().top, headerHeight)
 };
 
-function getViewPosition (titlePosition, offset = 0, isAbout = 0) {
-  return titlePosition - offset - offset / 100 * isAbout;
+function getViewPosition (titlePosition, offset) {
+  return titlePosition - offset;
 }
 
 const getTitleId = (linkId) => `${linkId.replace('-link', '')}`;
 
 const onWindowScroll = () => {
   const scrollDistance = window.scrollY;
+  const scrollDistanceEpsilon = 20;
 
   document.querySelectorAll('section').forEach((element, index) => {
-    if (ViewPosition[element.classList[0].toUpperCase()] <= scrollDistance) {
+    if (ViewPosition[element.classList[0].toUpperCase()] <= scrollDistance + scrollDistanceEpsilon) {
       document.querySelectorAll('.header__nav-link').forEach((prevCurrentLink) => {
         if (prevCurrentLink.classList.contains('header__nav-link--current')) {
           prevCurrentLink.classList.remove('header__nav-link--current');
