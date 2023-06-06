@@ -1,0 +1,18 @@
+* {
+  /* плашка-бегунок, фон */
+  scrollbar-color: $color-free-speech-magenta $color-dark-orange;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: $scrollbar-size; /* в основном для вертикальных полос прокрутки */
+  height: $scrollbar-size; /* в основном для горизонтальных полос прокрутки */
+}
+
+*::-webkit-scrollbar-thumb { /* плашка-бегунок */
+  background: $color-free-speech-magenta; /* фон */
+}
+
+*::-webkit-scrollbar-track { /* фон */
+  background: $color-dark-orange;
+}
