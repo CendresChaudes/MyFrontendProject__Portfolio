@@ -1,34 +1,19 @@
-const Projects = [
+const projects = [
   {
-    title: 'Test 1',
-    view: 'https://cendreschaudes.github.io/HTMLAcademy__HTML1-Sedona/',
-    github: 'https://github.com/CendresChaudes/HTMLAcademy__HTML1-Sedona'
+    title: 'Сервис для путешественников',
+    view: 'https://cendreschaudes.github.io/HTMLAcademy__JS2-Big-Trip/',
+    github: 'https://github.com/CendresChaudes/HTMLAcademy__JS2-Big-Trip'
   },
   {
-    title: 'Test 2',
-    view: 'https://cendreschaudes.github.io/HTMLAcademy__JS1-Kekstagram/',
-    github: 'https://github.com/CendresChaudes/HTMLAcademy__JS1-Kekstagram'
-  },
-  {
-    title: 'Test 3',
+    title: 'Сервис для размещения объявлений о сдаче недвижимости',
     view: 'https://cendreschaudes.github.io/HTMLAcademy__JS1-Keksobooking/',
     github: 'https://github.com/CendresChaudes/HTMLAcademy__JS1-Keksobooking'
   },
   {
-    title: 'Test 4',
-    view: 'https://cendreschaudes.github.io/HTMLAcademy__HTML1-Sedona/',
-    github: 'https://github.com/CendresChaudes/HTMLAcademy__HTML1-Sedona'
-  },
-  {
-    title: 'Test 5',
+    title: 'Сервис для загрузки и просмотра изображений',
     view: 'https://cendreschaudes.github.io/HTMLAcademy__JS1-Kekstagram/',
     github: 'https://github.com/CendresChaudes/HTMLAcademy__JS1-Kekstagram'
   },
-  {
-    title: 'Test 6',
-    view: 'https://cendreschaudes.github.io/HTMLAcademy__JS1-Keksobooking/',
-    github: 'https://github.com/CendresChaudes/HTMLAcademy__JS1-Keksobooking'
-  }
 ];
 
-export { Projects };
+export { projects };

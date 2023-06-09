@@ -1,16 +1,28 @@
 .contacts {
   padding: 0 50px 50px 50px;
 
+  @media (max-width: $vp-980) {
+    padding: 0 40px 40px 40px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 30px 30px 30px;
+  }
+
   &__title {
     margin: 0 0 30px 0;
 
     text-align: center;
+
+    @media (max-width: $vp-767) {
+      margin: 0 0 25px 0;
+    }
   }
 
   &__list {
     display: grid;
 
-    gap: 50px;
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -23,9 +35,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    font-size: 1.1rem;
 
+    gap: 20px;
+  }
+
+  &__link svg {
+    @media (max-width: $vp-980) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: $vp-767) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (hover: hover) {
     &:hover svg {
       fill: $color-free-speech-magenta;
     }

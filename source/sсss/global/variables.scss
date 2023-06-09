@@ -21,14 +21,28 @@ $color-free-speech-magenta: #e640ef;
 $fz-default: 16px;
 $scrollbar-size: 7px;
 
-// Families
+// Fonts
 
 $ff-sf-pro-text: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $ff-sf-pro-display: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-
+$ff-lobster: "Lobster", cursive;
 
 // Viewports
 //----------------------------------------------------------------------------
 
+$vp-1600: 1600px;
+$vp-1200: 1200px;
+$vp-1100: 1100px;
+$vp-980: 980px;
+$vp-880: 880px;
 $vp-767: 767px;
-$vp-1199: 1199px;
+$vp-600: 600px;
+$vp-500: 500px;
+$vp-450: 450px;
+
+// Other
+//----------------------------------------------------------------------------
+
+$header-desktop-offset: 14vh;
+$header-tablet-offset: 12vh;
+$header-mobile-offset: 10vh;

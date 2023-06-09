@@ -2,14 +2,13 @@
   position: relative;
 
   display: flex;
-  height: calc(100vh - 14vh);
-  padding: 15px 50px 25px;
+  height: calc(100vh - $header-desktop-offset);
   overflow: hidden;
 
   &__container {
     display: flex;
     flex-grow: 1;
-    max-width: 1050px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 
@@ -18,29 +17,117 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+
     background-image: url("@img/decorative/intro/space.png");
     background-repeat: no-repeat;
-    background-position: center 57%;
-    background-size: 125%;
+    background-position: center bottom;
+    background-size: auto 50vh;
+
+    @media (max-width: $vp-1600) {
+      background-size: auto 45vh;
+      background-position: center bottom 25px;
+    }
+
+    @media (max-width: $vp-1200) {
+      background-size: auto 39vh;
+      background-position: center bottom 50px;
+    }
+
+    @media (max-width: $vp-980) {
+      background-image: url("@img/decorative/intro/stars.jpg");
+      background-position: center;
+      background-size: cover;
+    }
   }
 
   &__title {
+    margin: 14vh 0 0 0;
+    padding: 0 50px 0 50px;
+
     font-weight: 600;
     font-size: 3rem;
     font-family: $ff-sf-pro-display;
+
+    @media (max-width: $vp-1600) {
+      margin: 11vh 0 0 0;
+    }
+
+    @media (max-width: $vp-1200) {
+      margin: 10vh 0 0 0;
+
+      font-size: 2.6rem;
+    }
+
+    @media (max-width: $vp-980) {
+      margin: 25vh 0 0 0;
+      padding: 0 40px 0 40px;
+
+      font-size: 2.4rem;
+    }
+
+    @media (max-width: $vp-767) {
+      padding: 0 30px 0 30px;
+
+      font-size: 2.2rem;
+    }
+
+    @media (max-width: $vp-600) {
+      font-size: 2.0rem;
+    }
+
+    @media (max-width: $vp-500) {
+      padding: 0 10px 0 10px;
+
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: $vp-450) {
+      font-size: 1.6rem;
+    }
   }
 
   &__description {
     margin-bottom: 10px;
+    padding: 0 50px 0 50px;
 
     font-weight: 600;
     font-size: 3rem;
     font-family: $ff-sf-pro-display;
     text-align: center;
+
+    @media (max-width: $vp-1200) {
+      font-size: 2.6rem;
+    }
+
+    @media (max-width: $vp-980) {
+      padding: 0 40px 0 40px;
+
+      font-size: 2.4rem;
+    }
+
+    @media (max-width: $vp-767) {
+      padding: 0 30px 0 30px;
+
+      font-size: 2.2rem;
+    }
+
+    @media (max-width: $vp-600) {
+      font-size: 2.0rem;
+    }
+
+    @media (max-width: $vp-500) {
+      padding: 0 10px 0 10px;
+
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: $vp-450) {
+      font-size: 1.6rem;
+    }
   }
 
   &__description-highlighting {
-    font-family: "Lobster", cursive;
+    font-family: $ff-lobster;
     color: $color-dark-orange;
     letter-spacing: 2px;
   }
@@ -48,7 +135,9 @@
   &__location {
     position: relative;
 
-    font-size: 1.1em;
+    @media (max-width: $vp-980) {
+      font-size: 1.05rem;
+    }
   }
 
   &__location::before {
@@ -67,16 +156,16 @@
   }
 
   &__show-more {
-    margin-top: auto;
-  }
+    margin: auto 0 50px 0;
 
-  &__background {
-    position: absolute;
-    top: -155px;
-    z-index: -1;
+    @media (max-width: $vp-980) {
+      font-size: 1.4rem;
+      margin: auto 0 100px 0;
+    }
 
-    width: 90%;
-
-    filter: brightness(115%);
+    @media (max-width: $vp-767) {
+      font-size: 1.3rem;
+      margin: auto 0 100px 0;
+    }
   }
 }

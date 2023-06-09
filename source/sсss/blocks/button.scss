@@ -1,7 +1,11 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 3px 20px;
 
   font-size: 1.1rem;
+  text-align: center;
 
   background-color: $color-dark-orange;
   border: none;
@@ -10,8 +14,18 @@
 
   transition: scale 450ms ease-in-out;
 
-  &:hover {
-    scale: 1.1;
+  @media (max-width: $vp-1100) {
+    font-size: 1.05rem;
+  }
+
+  @media (max-width: $vp-980) {
+    font-size: 1.1rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      scale: 1.1;
+    }
   }
 
   &:active {

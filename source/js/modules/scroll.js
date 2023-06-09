@@ -3,6 +3,8 @@ const headerLogo = document.querySelector('.header__logo');
 const navigation = document.querySelector('.header__nav');
 const showMoreButton = document.querySelector('.intro__show-more');
 
+const SCROLL_DISTANCE_EPSILON = 20;
+
 const headerHeight = header.clientHeight;
 
 const ViewPosition = {
@@ -40,12 +42,11 @@ const getTitleId = (linkId) => `${linkId.replace('-link', '')}`;
 
 const onWindowScroll = () => {
   const scrollDistance = window.scrollY;
-  const scrollDistanceEpsilon = 20;
 
   document
     .querySelectorAll('section')
     .forEach((element, index) => {
-      if (ViewPosition[element.classList[0].toUpperCase()] <= scrollDistance + scrollDistanceEpsilon) {
+      if (ViewPosition[element.classList[0].toUpperCase()] <= scrollDistance + SCROLL_DISTANCE_EPSILON) {
         document
           .querySelectorAll('.header__nav-link')
           .forEach((prevCurrentLink) => {
@@ -80,6 +81,11 @@ const onNavigationLinkClick = (evt) => {
   evt.preventDefault();
 
   if (evt.target.closest('.header__nav-link') && !evt.target.closest('.header__nav-link--current')) {
+    if (evt.target.id === 'contacts-link') {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      return;
+    }
+
     const titlePosition = ViewPosition[getTitleId(evt.target.id).toUpperCase()];
     window.scrollTo({ top: titlePosition, behavior: 'smooth' });
   }
@@ -98,7 +104,6 @@ const addListeners = () => {
   headerLogo.addEventListener('click', onHeaderLogoClick);
   navigation.addEventListener('click', onNavigationLinkClick);
   showMoreButton.addEventListener('click', onShowMoreButtonClick);
-
   window.addEventListener('scroll', onWindowScroll);
 };
 

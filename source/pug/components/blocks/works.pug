@@ -6,23 +6,24 @@ section.works
         .slider__wrapper
           ul.slider__list
             li.slider__item.slider__item--current
-              img(src="@img/content/works/test1.jpeg", width="450", height="350", alt="")
+              img(src="@img/content/works/big-trip.png", width="450", height="350", alt="")
             li.slider__item.slider__item--next
-              img(src="@img/content/works/test2.jpeg", width="450", height="350", alt="")
-            li.slider__item
-              img(src="@img/content/works/test3.jpeg", width="450", height="350", alt="")
-            li.slider__item
-              img(src="@img/content/works/test4.jpeg", width="450", height="350", alt="")
-            li.slider__item
-              img(src="@img/content/works/test5.jpeg", width="450", height="350", alt="")
+              img(src="@img/content/works/keksobooking.png", width="450", height="350", alt="")
             li.slider__item.slider__item--prev
-              img(src="@img/content/works/test6.jpeg", width="450", height="350", alt="")
+              img(src="@img/content/works/kekstagram.png", width="450", height="350", alt="")
           .slider__buttons-wrapper
             +btn("", "")(class="slider__button slider__button--prev")
               span.visually-hidden Предыдущий слайд.
             +btn("", "")(class="slider__button slider__button--next")
               span.visually-hidden Следующий слайд.
-        h3.slider__slide-title ХХХХХХХХХХХХХХХХХХХХХ
+        ul.slider__pagination
+          li.slider__pagination-item.slider__pagination-item--current
+            +btn("", "")
+          li.slider__pagination-item
+            +btn("", "")
+          li.slider__pagination-item
+            +btn("", "")
+        h3.slider__project-name.text
         .slider__links-wrapper
-          a.slider__view-link.button(href="#") View deployment
-          a.slider__github-link.button(href="#") GitHub
+          a.slider__view-link.button(href="#", target="_blank") View
+          a.slider__github-link.button(href="#", target="_blank") GitHub

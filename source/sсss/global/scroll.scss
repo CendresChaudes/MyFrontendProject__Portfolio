@@ -9,10 +9,12 @@
   height: $scrollbar-size; /* в основном для горизонтальных полос прокрутки */
 }
 
-*::-webkit-scrollbar-thumb { /* плашка-бегунок */
+*::-webkit-scrollbar-thumb {
+  /* плашка-бегунок */
   background: $color-free-speech-magenta; /* фон */
 }
 
-*::-webkit-scrollbar-track { /* фон */
+*::-webkit-scrollbar-track {
+  /* фон */
   background: $color-dark-orange;
 }

@@ -1,9 +1,11 @@
 header.header
-  .container
-    .header__wrapper
+  .header__container
+    .header__nav
       a.header__logo(href="/")
         img.header__logo-img(src="@img/content/header/logo-light.png" width="90" height="60")
-      nav.header__nav
+      +btn("", "")(class="header__nav-toggle")
+          span.visually-hidden Открыть/закрыть меню навигации.
+      nav.header__wrapper
         ul.header__nav-list
           li.header__nav-item
             a.header__nav-link.header__nav-link--current(id="intro-link", title="Current position") Intro

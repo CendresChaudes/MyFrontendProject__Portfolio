@@ -1,5 +1,10 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 70px;
+
+  gap: 60px;
+
+  @media (max-width: $vp-1100) {
+    gap: 50px;
+  }
 }
