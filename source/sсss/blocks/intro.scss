@@ -33,7 +33,7 @@
     }
   }
 
-  &__title {
+  &__greeting {
     margin: 14vh 0 0 0;
     padding: 0 50px 0 50px;
 
@@ -77,6 +77,10 @@
     @media (max-width: $vp-450) {
       font-size: 1.6rem;
     }
+
+    @media (max-width: $vp-380) {
+      font-size: 1.45rem;
+    }
   }
 
   &__description {
@@ -117,6 +121,10 @@
     @media (max-width: $vp-450) {
       font-size: 1.6rem;
     }
+
+    @media (max-width: $vp-380) {
+      font-size: 1.45rem;
+    }
   }
 
   &__description-highlighting {
@@ -130,6 +138,14 @@
 
     @media (max-width: $vp-980) {
       font-size: 1.05rem;
+    }
+
+    @media (max-width: $vp-767) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: $vp-380) {
+      font-size: 0.95rem;
     }
 
     &::before {
