@@ -12,6 +12,8 @@
   border-radius: 100px;
   cursor: pointer;
 
+  -webkit-transition-property: scale;
+  -webkit-transition-duration: 450ms;
   transition: scale 450ms ease-in-out;
 
   @media (max-width: $vp-1100) {

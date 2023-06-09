@@ -44,6 +44,8 @@
     & img {
       display: block;
 
+      -webkit-transition-property: scale;
+      -webkit-transition-duration: 450ms;
       transition: scale 450ms ease-in-out;
 
       @media (max-width: $vp-767) {
@@ -86,7 +88,9 @@
       border: none;
       transform: rotate(0deg);
 
-      transition: all 900ms ease-in-out;
+      -webkit-transition-property: transform;
+      -webkit-transition-duration: 900ms;
+      transition: transform 900ms ease-in-out;
 
       @media (max-width: $vp-500) {
         width: 45px;
@@ -161,6 +165,8 @@
     -webkit-background-clip: text;
             background-clip: text;
 
+    -webkit-transition-property: background-position;
+    -webkit-transition-duration: 450ms;
     transition: background-position 450ms ease-in-out;
 
     -webkit-text-fill-color: $color-transparent;

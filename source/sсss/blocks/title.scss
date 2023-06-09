@@ -10,6 +10,8 @@
   background-position: 0 88%;
   background-size: 100% 0.2rem;
 
+  -webkit-transition-property: background-size;
+  -webkit-transition-duration: 250ms;
   transition: background-size 250ms ease-in-out;
 
   @media (max-width: $vp-1100) {
