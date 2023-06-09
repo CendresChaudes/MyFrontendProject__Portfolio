@@ -17,13 +17,13 @@
     background-size: auto 50vh;
 
     @media (max-width: $vp-1600) {
-      background-size: auto 45vh;
       background-position: center bottom 25px;
+      background-size: auto 45vh;
     }
 
     @media (max-width: $vp-1200) {
-      background-size: auto 39vh;
       background-position: center bottom 50px;
+      background-size: auto 39vh;
     }
 
     @media (max-width: $vp-980) {
@@ -131,34 +131,36 @@
     @media (max-width: $vp-980) {
       font-size: 1.05rem;
     }
-  }
 
-  &__location::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -32px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -32px;
 
-    width: 30px;
-    height: 30px;
+      width: 30px;
+      height: 30px;
 
-    background-image: url("@img/decorative/intro/pin.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px 20px;
+      background-image: url("@img/decorative/intro/pin.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px 20px;
+    }
   }
 
   &__show-more {
     margin: auto 0 50px 0;
 
     @media (max-width: $vp-980) {
-      font-size: 1.4rem;
       margin: auto 0 100px 0;
+
+      font-size: 1.4rem;
     }
 
     @media (max-width: $vp-767) {
-      font-size: 1.3rem;
       margin: auto 0 100px 0;
+
+      font-size: 1.3rem;
     }
   }
 }

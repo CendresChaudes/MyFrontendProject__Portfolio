@@ -42,6 +42,10 @@
       background-size: 50px 50px;
     }
 
+    &.in-process {
+      opacity: 0.4;
+    }
+
     &--html5 {
       background-image: url("@img/decorative/skills/html5-icon.svg");
     }
@@ -101,9 +105,5 @@
     &--git {
       background-image: url("@img/decorative/skills/git-icon.svg");
     }
-  }
-
-  &__item.in-process {
-    opacity: 0.4;
   }
 }
