@@ -17,9 +17,11 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper"><a class="header__logo" href="#"><img class="header__logo-img" src="images/content/header/logo-light.png" width="90" height="60"></a>
-          <nav class="header__nav">
+      <div class="header__container">
+        <div class="header__nav"><a class="header__logo" href="/"><img class="header__logo-img" src="images/content/header/logo-light.png" width="90" height="60"></a>
+          <button class="header__nav-toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню навигации.</span>
+          </button>
+          <nav class="header__wrapper">
             <ul class="header__nav-list">
               <li class="header__nav-item"><a class="header__nav-link header__nav-link--current" id="intro-link" title="Current position">Intro</a></li>
               <li class="header__nav-item"><a class="header__nav-link" href="#about" id="about-link">About me</a></li>
@@ -34,15 +36,13 @@
     <main>
       <div class="wrapper">
         <section class="intro offset">
-          <div class="intro__container">
-            <div class="intro__wrapper">
-              <h1 class="intro__title" id="intro">Welcome to my portfolio page</h1>
-              <p class="intro__description">
-                My name is Roman and I'm a
-                <span class="intro__description-highlighting">Frontend Developer</span>
-              </p>
-              <p class="intro__location">Russia, Saint-Petersburg</p><a class="intro__show-more button" href="#about">Show more</a>
-            </div>
+          <div class="intro__wrapper">
+            <h1 class="intro__title" id="intro">Welcome to&nbsp;my&nbsp;portfolio page!</h1>
+            <p class="intro__description">
+              My&nbsp;name is&nbsp;Roman and I&rsquo;m a
+              <span class="intro__description-highlighting">Frontend&nbsp;Developer</span>
+            </p>
+            <p class="intro__location text">Russia, Saint-Petersburg</p><a class="intro__show-more button" href="#about">Show more</a>
           </div>
         </section>
         <section class="about">
@@ -50,16 +50,17 @@
             <h2 class="about__title" id="about"><span class="title">About me</span></h2>
             <div class="about__content-wrapper"><img class="about__photo" src="images/content/about/my-photo.jpg" width="300" height="350" alt="My photo.">
               <div class="about__info-wrapper">
-                <p class="about__info">Hello there!</p>
-                <p class="about__info">
-                  My name is Roman and I'm from Russia from not sunny Saint-Petersburg.
-                  I'm a railway engineer by education and managed to work on the construction of the subway and the design of bridges...but later I discovered world of IT.
+                <p class="about__info about__greeting text">Hello there!</p>
+                <p class="about__info text">
+                  My&nbsp;name is&nbsp;Roman and I&rsquo;m from Russia from not sunny Saint-Petersburg.
+                  I&rsquo;m a&nbsp;railway engineer by&nbsp;education and managed to&nbsp;work on&nbsp;the construction of&nbsp;the subway
+                  and the design of&nbsp;bridges...but later&nbsp;I discovered world of&nbsp;IT.
                 </p>
-                <p class="about__info">My first acquaintance with IT began with Python and MySQL. After this I wanted to sample frontend stack and I really liked it!</p>
-                <p class="about__info">
-                  I'm very glad that fate brought me together with Frontend Development because it's very cool and I
+                <p class="about__info text">My&nbsp;first acquaintance with&nbsp;IT began with Python and MySQL. After this&nbsp;I wanted to&nbsp;sample frontend stack and&nbsp;I really liked&nbsp;it!</p>
+                <p class="about__info text">
+                  I&rsquo;m very glad that fate brought me&nbsp;together with Frontend Development because it&rsquo;s very cool and&nbsp;I
                   <img src="images/content/about/heart.gif" width="35" height="35" alt="Animated pixel heart.">
-                  it &mdash; it's not just a job but also a hobby.
+                  it&nbsp;&mdash; it&rsquo;s not just a&nbsp;job but also a&nbsp;hobby.
                 </p>
               </div>
             </div>
@@ -69,21 +70,21 @@
           <div class="container">
             <h2 class="skills__title" id="skills"><span class="title">Skills</span></h2>
             <ul class="skills__list">
-              <li class="skills__list-item skills__list-item--html5">HTML5</li>
-              <li class="skills__list-item skills__list-item--pug">Pug</li>
-              <li class="skills__list-item skills__list-item--css3">CSS3</li>
-              <li class="skills__list-item skills__list-item--sass">SASS</li>
-              <li class="skills__list-item skills__list-item--bem">BEM</li>
-              <li class="skills__list-item skills__list-item--js">JavaScript</li>
-              <li class="skills__list-item skills__list-item--ts in-process">TypeScript</li>
-              <li class="skills__list-item skills__list-item--react in-process">React</li>
-              <li class="skills__list-item skills__list-item--redux in-process">Redux</li>
-              <li class="skills__list-item skills__list-item--jest in-process">Jest</li>
-              <li class="skills__list-item skills__list-item--gulp">Gulp</li>
-              <li class="skills__list-item skills__list-item--webpack in-process">Webpack</li>
-              <li class="skills__list-item skills__list-item--vsc">VSC</li>
-              <li class="skills__list-item skills__list-item--figma">Figma</li>
-              <li class="skills__list-item skills__list-item--git">Git</li>
+              <li class="skills__item skills__item--html5 text">HTML5</li>
+              <li class="skills__item skills__item--pug text">Pug</li>
+              <li class="skills__item skills__item--css3 text">CSS3</li>
+              <li class="skills__item skills__item--sass text">SASS</li>
+              <li class="skills__item skills__item--bem text">BEM</li>
+              <li class="skills__item skills__item--js text">JavaScript</li>
+              <li class="skills__item skills__item--ts in-process text">TypeScript</li>
+              <li class="skills__item skills__item--react in-process text">React</li>
+              <li class="skills__item skills__item--redux in-process text">Redux</li>
+              <li class="skills__item skills__item--jest in-process text">Jest</li>
+              <li class="skills__item skills__item--gulp text">Gulp</li>
+              <li class="skills__item skills__item--webpack text">Webpack</li>
+              <li class="skills__item skills__item--vsc text">VSC</li>
+              <li class="skills__item skills__item--figma text">Figma</li>
+              <li class="skills__item skills__item--git text">Git</li>
             </ul>
           </div>
         </section>
@@ -93,12 +94,9 @@
             <div class="slider">
               <div class="slider__wrapper">
                 <ul class="slider__list">
-                  <li class="slider__item slider__item--current"><img src="images/content/works/test1.jpeg" width="450" height="350" alt=""></li>
-                  <li class="slider__item slider__item--next"><img src="images/content/works/test2.jpeg" width="450" height="350" alt=""></li>
-                  <li class="slider__item"><img src="images/content/works/test3.jpeg" width="450" height="350" alt=""></li>
-                  <li class="slider__item"><img src="images/content/works/test4.jpeg" width="450" height="350" alt=""></li>
-                  <li class="slider__item"><img src="images/content/works/test5.jpeg" width="450" height="350" alt=""></li>
-                  <li class="slider__item slider__item--prev"><img src="images/content/works/test6.jpeg" width="450" height="350" alt=""></li>
+                  <li class="slider__item slider__item--current"><img src="images/content/works/big-trip.png" width="450" height="350" alt=""></li>
+                  <li class="slider__item slider__item--next"><img src="images/content/works/keksobooking.png" width="450" height="350" alt=""></li>
+                  <li class="slider__item slider__item--prev"><img src="images/content/works/kekstagram.png" width="450" height="350" alt=""></li>
                 </ul>
                 <div class="slider__buttons-wrapper">
                   <button class="slider__button slider__button--prev" type="button"><span class="visually-hidden">Предыдущий слайд.</span>
@@ -107,8 +105,22 @@
                   </button>
                 </div>
               </div>
-              <h3 class="slider__slide-title">ХХХХХХХХХХХХХХХХХХХХХ</h3>
-              <div class="slider__links-wrapper"><a class="slider__view-link button" href="#">View deployment</a><a class="slider__github-link button" href="#">GitHub</a></div>
+              <ul class="slider__pagination">
+                <li class="slider__pagination-item slider__pagination-item--current">
+                  <button type="button">
+                  </button>
+                </li>
+                <li class="slider__pagination-item">
+                  <button type="button">
+                  </button>
+                </li>
+                <li class="slider__pagination-item">
+                  <button type="button">
+                  </button>
+                </li>
+              </ul>
+              <h3 class="slider__project-name text"></h3>
+              <div class="slider__links-wrapper"><a class="slider__view-link button" href="#" target="_blank">View</a><a class="slider__github-link button" href="#" target="_blank">GitHub</a></div>
             </div>
           </div>
         </section>
@@ -116,30 +128,30 @@
           <div class="container">
             <h2 class="contacts__title" id="contacts"><span class="title">Contacts</span></h2>
             <ul class="contacts__list">
-              <li class="contacts__item"><a class="contacts__link" href="tg://resolve?domain=cendres_chaudes">
+              <li class="contacts__item"><a class="contacts__link" href="tg://resolve?domain=cendres_chaudes" target="_blank">
                   <svg width="75" height="75" viewBox="0 0 75 75" fill="#40b3e0">
                     <use xlink:href="images/sprite/sprite.svg#telegram-icon"></use>
-                  </svg><span class="contacts__link-text">Telegram</span></a></li>
-              <li class="contacts__item"><a class="contacts__link" href="https://api.whatsapp.com/send/?phone=79602624792">
+                  </svg><span class="contacts__link-text text">Telegram</span></a></li>
+              <li class="contacts__item"><a class="contacts__link" href="https://api.whatsapp.com/send/?phone=79602624792" target="_blank">
                   <svg width="75" height="75" viewBox="0 0 75 75" fill="#20b038">
                     <use xlink:href="images/sprite/sprite.svg#whatsapp-icon"></use>
-                  </svg><span class="contacts__link-text">WhatsApp</span></a></li>
-              <li class="contacts__item"><a class="contacts__link" href="https://discordapp.com/users/1011591921069727804/">
+                  </svg><span class="contacts__link-text text">WhatsApp</span></a></li>
+              <li class="contacts__item"><a class="contacts__link" href="https://discordapp.com/users/1011591921069727804/" target="_blank">
                   <svg width="75" height="75" viewBox="0 0 75 75" fill="#5865f2">
                     <use xlink:href="images/sprite/sprite.svg#discord-icon"></use>
-                  </svg><span class="contacts__link-text">Discord</span></a></li>
-              <li class="contacts__item"><a class="contacts__link" href="https://github.com/CendresChaudes">
+                  </svg><span class="contacts__link-text text">Discord</span></a></li>
+              <li class="contacts__item"><a class="contacts__link" href="https://github.com/CendresChaudes" target="_blank">
                   <svg width="75" height="75" viewBox="0 0 75 75" fill="#ffffff">
                     <use xlink:href="images/sprite/sprite.svg#github-icon"></use>
-                  </svg><span class="contacts__link-text">GitHub</span></a></li>
-              <li class="contacts__item"><a class="contacts__link" href="https://www.linkedin.com/in/роман-пронин-860467273/">
+                  </svg><span class="contacts__link-text text">GitHub</span></a></li>
+              <li class="contacts__item"><a class="contacts__link" href="https://www.linkedin.com/in/роман-пронин-860467273/" target="_blank">
                   <svg width="75" height="75" viewBox="0 0 75 75" fill="#0a66c2">
                     <use xlink:href="images/sprite/sprite.svg#linkedin-icon"></use>
-                  </svg><span class="contacts__link-text">LinkedIn</span></a></li>
-              <li class="contacts__item"><a class="contacts__link contacts__link--gmail" href="mailto:romqaaa1337@gmail.com">
+                  </svg><span class="contacts__link-text text">LinkedIn</span></a></li>
+              <li class="contacts__item"><a class="contacts__link contacts__link--gmail" href="mailto:romqaaa1337@gmail.com" target="_blank">
                   <svg width="75" height="75" viewBox="0 0 75 75">
                     <use xlink:href="images/sprite/sprite.svg#gmail-icon"></use>
-                  </svg><span class="contacts__link-text">Gmail</span></a></li>
+                  </svg><span class="contacts__link-text text">Gmail</span></a></li>
             </ul>
           </div>
         </section>
