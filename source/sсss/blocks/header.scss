@@ -67,7 +67,7 @@
   .is-open &__nav-toggle {
     @media (max-width: $vp-767) {
       background-image: url("@img/decorative/header/close-menu-icon.svg");
-      transform: rotate(360deg);
+      transform: rotate(180deg);
     }
   }
 
@@ -89,8 +89,8 @@
       transform: rotate(0deg);
 
       -webkit-transition-property: transform;
-      -webkit-transition-duration: 900ms;
-      transition: transform 900ms ease-in-out;
+      -webkit-transition-duration: 600ms;
+      transition: transform 600ms ease-in-out;
 
       @media (max-width: $vp-500) {
         width: 45px;
@@ -113,7 +113,7 @@
 
     @media (max-width: $vp-767) {
       position: absolute;
-      top: $header-mobile-offset;
+      top: calc($header-mobile-offset + 2.2vh);
       right: 0;
 
       display: none;
