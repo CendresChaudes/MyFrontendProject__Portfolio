@@ -629,9 +629,9 @@ textarea {
 @media (max-width: 767px) {
   .is-open .header__nav-toggle {
     background-image: url("../images/decorative/header/close-menu-icon.svg");
-    -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 .header__nav-toggle {
@@ -652,12 +652,12 @@ textarea {
         -ms-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-transition-property: transform;
-    -webkit-transition-duration: 900ms;
-    -webkit-transition: -webkit-transform 900ms ease-in-out;
-    transition: -webkit-transform 900ms ease-in-out;
-    -o-transition: transform 900ms ease-in-out;
-    transition: transform 900ms ease-in-out;
-    transition: transform 900ms ease-in-out, -webkit-transform 900ms ease-in-out;
+    -webkit-transition-duration: 600ms;
+    -webkit-transition: -webkit-transform 600ms ease-in-out;
+    transition: -webkit-transform 600ms ease-in-out;
+    -o-transition: transform 600ms ease-in-out;
+    transition: transform 600ms ease-in-out;
+    transition: transform 600ms ease-in-out, -webkit-transform 600ms ease-in-out;
   }
 }
 @media (max-width: 767px) and (max-width: 500px) {
@@ -685,7 +685,7 @@ textarea {
 @media (max-width: 767px) {
   .header__wrapper {
     position: absolute;
-    top: 10vh;
+    top: 12.2vh;
     right: 0;
     display: none;
     width: 0;
@@ -955,13 +955,13 @@ textarea {
 @media (max-width: 980px) {
   .intro__show-more {
     margin: auto 0 100px 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 767px) {
   .intro__show-more {
     margin: auto 0 100px 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1159,11 +1159,11 @@ textarea {
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   opacity: 0;
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 300ms;
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+  -webkit-transition-duration: 300ms;
+  -webkit-transition-property: all;
 }
 @media (max-width: 980px) {
   .slider__item {
@@ -1312,13 +1312,13 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .slider__pagination-item button {
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 50%;
+    -webkit-transform: translateZ(0) .slider__pagination-item button;
+            transform: translateZ(0) .slider__pagination-item button;
+    transform-width: 12px;
+    transform-height: 12px;
+    transform-background-color: #ffffff;
+    transform-border: none;
+    transform-border-radius: 50%;
   }
   .slider__pagination-item--current button {
     background-color: #fe8f07;
