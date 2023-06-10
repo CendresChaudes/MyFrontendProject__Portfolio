@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_429_11083)">
-<path d="M7 7.00006L17 17.0001M7 17.0001L17 7.00006" stroke="#fe8f07" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_429_11083">
-<rect width="24" height="24" fill="#fe8f07"/>
-</clipPath>
-</defs>
-</svg>
+<svg width="800" height="800" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="m7 7 10 10M7 17 17 7" stroke="#fe8f07" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="a"><path fill="#fe8f07" d="M0 0h24v24H0z"/></clipPath></defs></svg>
