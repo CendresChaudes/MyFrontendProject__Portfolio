@@ -16,4 +16,4 @@
 
 ---
 
-Ссылка на проект: [https://cendreschaudes.github.io/PP__Portfolio/]
+Ссылка на проект: https://cendreschaudes.github.io/PP__Portfolio/
