@@ -3,27 +3,35 @@ section.works
       h2.works__title#works
         span.title Works
       .slider
-        .slider__wrapper
-          ul.slider__list
-            li.slider__item.slider__item--current
-              img(src="@img/content/works/big-trip.png", width="450", height="350", alt="")
-            li.slider__item.slider__item--next
-              img(src="@img/content/works/keksobooking.png", width="450", height="350", alt="")
-            li.slider__item.slider__item--prev
-              img(src="@img/content/works/kekstagram.png", width="450", height="350", alt="")
-          .slider__buttons-wrapper
-            +btn("", "")(class="slider__button slider__button--prev")
-              span.visually-hidden Предыдущий слайд.
-            +btn("", "")(class="slider__button slider__button--next")
-              span.visually-hidden Следующий слайд.
-        ul.slider__pagination
-          li.slider__pagination-item.slider__pagination-item--current
-            +btn("", "")
-          li.slider__pagination-item
-            +btn("", "")
-          li.slider__pagination-item
-            +btn("", "")
-        h3.slider__project-name.text
-        .slider__links-wrapper
-          a.slider__view-link.button(href="#", target="_blank") View
-          a.slider__github-link.button(href="#", target="_blank") GitHub
+        ul.slider__list.swiper-wrapper
+          li.slider__item
+            img(src="@img/content/works/big-trip.png", width="450", height="350", alt="")
+            h3.slider__project-name.text Сервис для путешественников
+            .slider__links-wrapper
+              a.slider__view-link.button(href="https://cendreschaudes.github.io/HTMLAcademy__JS2-Big-Trip/", target="_blank") View
+              a.slider__github-link.button(href="https://github.com/CendresChaudes/HTMLAcademy__JS2-Big-Trip", target="_blank") GitHub
+          li.slider__item
+            img(src="@img/content/works/keksobooking.png", width="450", height="350", alt="")
+            h3.slider__project-name.text Сервис для размещения объявлений о сдаче недвижимости
+            .slider__links-wrapper
+              a.slider__view-link.button(href="https://cendreschaudes.github.io/HTMLAcademy__JS1-Keksobooking/", target="_blank") View
+              a.slider__github-link.button(href="https://github.com/CendresChaudes/HTMLAcademy__JS1-Keksobooking", target="_blank") GitHub
+          li.slider__item
+            img(src="@img/content/works/kekstagram.png", width="450", height="350", alt="")
+            h3.slider__project-name.text Сервис для загрузки и просмотра изображений
+            .slider__links-wrapper
+              a.slider__view-link.button(href="https://cendreschaudes.github.io/HTMLAcademy__JS1-Kekstagram/", target="_blank") View
+              a.slider__github-link.button(href="https://github.com/CendresChaudes/HTMLAcademy__JS1-Kekstagram", target="_blank") GitHub
+          li.slider__item
+            img(src="@img/content/works/clever-baby.png", width="450", height="350", alt="")
+            h3.slider__project-name.text Сайт школы английского языка для детей от 2 до 7 лет
+            .slider__links-wrapper
+              a.slider__view-link.button(href="https://cendreschaudes.github.io/PP__CleverBaby/", target="_blank") View
+              a.slider__github-link.button(href="https://github.com/CendresChaudes/PP__CleverBaby", target="_blank") GitHub
+          li.slider__item
+            img(src="@img/content/works/drink2go.png", width="450", height="350", alt="")
+            h3.slider__project-name.text Интернет-магазин кофейных напитков
+            .slider__links-wrapper
+              a.slider__view-link.button(href="https://cendreschaudes.github.io/HTMLAcademy__Drink2Go/", target="_blank") View
+              a.slider__github-link.button(href="https://github.com/CendresChaudes/HTMLAcademy__Drink2Go", target="_blank") GitHub
+
