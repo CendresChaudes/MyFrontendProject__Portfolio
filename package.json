@@ -69,5 +69,10 @@
     "source/img/**/*.svg",
     "source/sass/**/*.scss"
   ],
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "css-loader": "6.8.1",
+    "style-loader": "3.3.3",
+    "swiper": "10.0.4"
+  }
 }
