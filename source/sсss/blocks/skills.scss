@@ -78,6 +78,21 @@
       background-image: url("@img/decorative/skills/react-icon.svg");
     }
 
+    &--fsd {
+      background-image: url("@img/decorative/skills/fsd-icon.png");
+      background-size: 110px 50px;
+      background-position: center top 10px;
+
+      @media (max-width: $vp-980) {
+        background-size: 105px 45px;
+        background-position: center top 5px;
+      }
+
+      @media (max-width: $vp-767) {
+        background-size: 95px 40px;
+      }
+    }
+
     &--redux {
       background-image: url("@img/decorative/skills/redux-icon.svg");
     }
@@ -92,18 +107,6 @@
 
     &--webpack {
       background-image: url("@img/decorative/skills/webpack-icon.svg");
-    }
-
-    &--vsc {
-      background-image: url("@img/decorative/skills/vsc-icon.svg");
-    }
-
-    &--figma {
-      background-image: url("@img/decorative/skills/figma-icon.svg");
-    }
-
-    &--git {
-      background-image: url("@img/decorative/skills/git-icon.svg");
     }
   }
 }
