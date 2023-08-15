@@ -34,7 +34,7 @@
   }
 
   &__greeting {
-    margin: 14vh 0 0 0;
+    margin: 12vh 0 0 0;
     padding: 0 50px 0 50px;
 
     font-weight: 600;
@@ -42,11 +42,11 @@
     font-family: $ff-sf-pro-display;
 
     @media (max-width: $vp-1600) {
-      margin: 11vh 0 0 0;
+      margin: 10vh 0 0 0;
     }
 
     @media (max-width: $vp-1200) {
-      margin: 10vh 0 0 0;
+      margin: 9vh 0 0 0;
 
       font-size: 2.6rem;
     }
