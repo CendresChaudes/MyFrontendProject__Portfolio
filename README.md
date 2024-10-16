@@ -16,4 +16,4 @@
 
 ---
 
-Ссылка на деплой: https://cendreschaudes.github.io/PP__Portfolio/
+Ссылка на деплой: https://cendreschaudes.github.io/MyFrontendProject__Portfolio/
